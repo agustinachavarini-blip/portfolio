@@ -253,6 +253,7 @@ div[aria-label="Etapas del caso"]{display:flex!important;flex-wrap:nowrap!import
 @keyframes dcb{0%,52%,100%{transform:translate(0.05em,0.07em)}55%{transform:translate(-0.04em,0.07em)}58%{transform:translate(0.14em,0.07em)}61%{transform:translate(-0.03em,0.07em)}64%{transform:translate(0.12em,0.07em)}67%{transform:translate(0.0em,0.07em)}70%{transform:translate(0.09em,0.07em)}73%{transform:translate(0.05em,0.07em)}}
 @keyframes dct{0%,52%,100%{transform:translateX(0)}55%{transform:translateX(0.025em)}58%{transform:translateX(-0.04em)}61%{transform:translateX(0.02em)}64%{transform:translateX(-0.03em)}67%{transform:translateX(0.01em)}70%{transform:translateX(-0.015em)}73%{transform:translateX(0)}}
 .dc-b{animation:dcb 4.2s ease-in-out infinite;will-change:transform}
+@media (max-width:720px){.hd-dot{display:none!important}}
 .dc-t{animation:dct 4.2s ease-in-out infinite;will-change:transform}
 @media (prefers-reduced-motion:reduce){.dc-b,.dc-t{animation:none!important}}
 html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}img,video{max-width:100%}
@@ -288,6 +289,7 @@ Agustina Chavarini
 <div aria-hidden="true" style="position:absolute;left:50%;top:2%;width:min(560px,70vw);aspect-ratio:1 / 1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 30% 30%,#B3CFD0 0%,#F3D5C7 48%,#D9F36B 100%);opacity:0.55;filter:blur(64px)"></div>
 <div style="position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:32px">
 <span style="display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 16px 0 10px;box-sizing:border-box;border-radius:100px;background:#FFFFFF;font-size:13px;color:#3A3936"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: rgb(242, 92, 47); display: inline-block"></span>Disponible para nuevos desafíos · Buenos Aires y el mundo</span>
+<div style="font-family:'DM Mono',ui-monospace,monospace;font-size:clamp(14px,1.6vw,20px);letter-spacing:0.08em;text-transform:uppercase;color:#0E0E0E;display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center"><span style="font-weight:500">Agustina Chavarini</span><span class="hd-dot" aria-hidden="true" style="width:4px;height:4px;border-radius:50%;background:#F25C2F"></span><span style="color:#6B6A67">Service Designer</span></div>
 <h1 style="margin: 0; max-width: 960px; font-size: clamp(40px,7vw,96px); line-height: 1; font-weight: 300; letter-spacing: -0.045em; color: #0E0E0E; width: 100%"><span>De procesos <span style="position:relative;display:inline-block"><span class="dc-t" style="display:inline-block;clip-path:inset(0 0 46% 0)">desconectados</span><span class="dc-b" aria-hidden="true" style="position:absolute;left:0;top:0;display:inline-block;color:#F25C2F;transform:translate(0.05em,0.07em);clip-path:inset(52% 0 0 0)">desconectados</span></span> a sistemas que se <mark style="background:#D9F36B;color:#0E0E0E;padding:0 0.12em;border-radius:0.14em">entienden</mark>.</span></h1>
 <p style="margin:0;max-width:640px;font-size:18px;line-height:30px;font-weight:300;color:#3A3936">Estrategia y diseño de servicios para problemas complejos: entender lo que existe, definir cómo debería funcionar y llevarlo a la práctica, de punta a punta.</p>
 <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
@@ -1786,7 +1788,7 @@ class Component extends DCLogic {
               rie: ['Recepción de facturas digitales y carga en el Backoffice', 'Quienes no envíen la factura a la fecha de corte pasan a pendientes, de forma automática', 'Depende de que el Módulo Equipos ya esté aplicado'] }
           ]
         },
-        card: { bg: '#FFFFFF', fg: '#0E0E0E', mute: '#6B6A67', line: '#D9D7D2', btnBg: '#0E0E0E', btnFg: '#F6F5F2', pill: GRAD[1] }
+        card: { bg: '#F3D5C7', fg: '#0E0E0E', mute: '#5A3F34', line: '#DDB6A4', btnBg: '#0E0E0E', btnFg: '#F6F5F2', pill: GRAD[1] }
       },
       {
         n: '03', menu: 'Viaje repartidores y vendors', tag: 'Service Designer · Monchis · 2026',
